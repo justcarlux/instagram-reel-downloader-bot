@@ -1,0 +1,30 @@
+{
+    "name": "instagram-reel-downloader-bot",
+    "version": "1.0.0",
+    "description": "Telegram bot to download Instagram videos or reels.",
+    "main": "index.js",
+    "scripts": {
+        "build": "rimraf dist && tsc",
+        "start:dev": "ts-node src/index.ts",
+        "start:build": "node dist/index.js",
+        "start:watch": "npx nodemon src/index.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.8.7",
+        "@types/node-telegram-bot-api": "^0.61.11",
+        "fs-extra": "^11.1.1",
+        "nodemon": "^3.0.1",
+        "rimraf": "^5.0.5",
+        "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "dotenv": "^16.3.1",
+        "node-telegram-bot-api": "^0.63.0",
+        "puppeteer": "^21.4.0",
+        "puppeteer-extra": "^3.3.6",
+        "puppeteer-extra-plugin-stealth": "^2.11.2"
+    }
+}
